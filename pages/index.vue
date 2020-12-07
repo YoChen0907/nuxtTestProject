@@ -2,7 +2,7 @@
 <template>
   <div>
       <div id="fb-root"></div>
-      <p>test2</p>
+      <p>test3</p>
       <p>{{ fullPath }}</p>
       <div class="fb-comments" @data-href="fullPath" data-numposts="5" data-width=""></div>
   </div>
