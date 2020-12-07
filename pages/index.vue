@@ -1,10 +1,9 @@
 
 <template>
   <div>
-    <client-only>
       <div id="fb-root"></div>
-      <div class="fb-comments" data-href="http://localhost:3000/" data-numposts="5" data-width=""></div>
-      </client-only>
+      <p>{{ fullPath }}</p>
+      <div class="fb-comments" @data-href="fullPath" data-numposts="5" data-width=""></div>
   </div>
 </template>
 
@@ -14,26 +13,18 @@ import Vue from 'vue';
 export default {
   data() {
     return {
-      post: []
+      fullPath: this.$route.fullPath
     }
   },
-  mounted() {
-    window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '761351597756340',
-      xfbml      : true,
-      version    : 'v8.0'
-    });
-    FB.AppEvents.logPageView();
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/zh_TW/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+  updated() {
+    const FB = Vue.FB;
+    if (FB && FB.init) {
+      FB.init({
+        appId: '761351597756340',
+        xfbml: true,
+        version: 'v8.0'
+      });
+    }
   },
   head() {
     return {
