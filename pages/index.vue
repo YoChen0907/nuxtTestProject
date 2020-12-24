@@ -26,19 +26,37 @@ export default {
     }
     return ({
       jsonld,
-      fullPath: this.$route.fullPath
+      fullPath: this.$route.fullPath,
+      breadcrumbs: [
+        {
+          url: 'https://example.com',
+          text: 'top page',
+        },
+        {
+          url: 'https://example.com/foo',
+          text: 'foo',
+        },
+        {
+          url: 'https://example.com/foo/bar',
+          text: 'bar',
+        },
+      ],
     })
   },
-  jsonld() {
-    const jsonld = {
-      '@type': 'PodcastSeries',
-      webFeed: 'https://main.d3u4rdok1doiis.amplifyapp.com/',
-      url: 'https://main.d3u4rdok1doiis.amplifyapp.com/',
-      name: '不打烊',
-      description: '測試 js-onload',
-      author: { name: 'authorName' }
-    }
-    return jsonld
+jsonld() {
+    const items = this.breadcrumbs.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@id': item.url,
+        name: item.text,
+      },
+    }));
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: items,
+    };
   },
   // updated() {
   //   const FB = Vue.FB;
