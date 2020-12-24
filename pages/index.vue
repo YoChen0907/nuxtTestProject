@@ -29,16 +29,16 @@ export default {
       fullPath: this.$route.fullPath
     })
   },
-  updated() {
-    const FB = Vue.FB;
-    if (FB && FB.init) {
-      FB.init({
-        appId: '761351597756340',
-        xfbml: true,
-        version: 'v8.0'
-      });
-    }
-  },
+  // updated() {
+  //   const FB = Vue.FB;
+  //   if (FB && FB.init) {
+  //     FB.init({
+  //       appId: '761351597756340',
+  //       xfbml: true,
+  //       version: 'v8.0'
+  //     });
+  //   }
+  // },
   head() {
     return {
       title: '',
