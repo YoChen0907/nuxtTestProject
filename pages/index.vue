@@ -1,16 +1,6 @@
 
 <template>
   <div>
-    <script v-html="jsonld" type="application/ld+json">
-    {
-      '@type': 'PodcastSeries',
-      webFeed: 'https://main.d3u4rdok1doiis.amplifyapp.com/',
-      url: 'https://main.d3u4rdok1doiis.amplifyapp.com/',
-      name: '不打烊',
-      description: '測試 js-onload',
-      author: { name: 'authorName' }
-    }
-    </script>
       <div id="fb-root">hihi</div>
       <iframe
         style="height: 140px; width: 100%; border: none; border-radius: 4px; box-shadow: 0 1px 8px rgba(0, 0, 0, .2);"
@@ -23,16 +13,10 @@
 
 <script>
 import Vue from 'vue';
+import jsonld from '~/static/jsonld.json';
+
 export default {
   data() {
-    const jsonld = {
-      '@type': 'PodcastSeries',
-      webFeed: 'https://main.d3u4rdok1doiis.amplifyapp.com/',
-      url: 'https://main.d3u4rdok1doiis.amplifyapp.com/',
-      name: '不打烊',
-      description: '測試 js-onload',
-      author: { name: 'authorName' }
-    }
     return ({
       jsonld,
       fullPath: this.$route.fullPath,
@@ -52,16 +36,9 @@ export default {
       ],
     })
   },
-  // updated() {
-  //   const FB = Vue.FB;
-  //   if (FB && FB.init) {
-  //     FB.init({
-  //       appId: '761351597756340',
-  //       xfbml: true,
-  //       version: 'v8.0'
-  //     });
-  //   }
-  // },
+  jsonld() {
+    return jsonld;
+  },
   head() {
     return {
       title: '',

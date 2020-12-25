@@ -1,0 +1,8 @@
+{
+    "@type": "PodcastSeries",
+    "webFeed": "https://main.d3u4rdok1doiis.amplifyapp.com/",
+    "url": "https://main.d3u4rdok1doiis.amplifyapp.com/",
+    "name": "不打烊",
+    "description": "測試 js-onload",
+    "author": { "name": "authorName" }
+  }
