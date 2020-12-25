@@ -2,11 +2,11 @@
 <template>
   <div>
       <div id="fb-root">hihi</div>
-      <iframe
+      <!-- <iframe
         style="height: 140px; width: 100%; border: none; border-radius: 4px; box-shadow: 0 1px 8px rgba(0, 0, 0, .2);"
         src="https://player.soundon.fm/embed?podcast=5d485b3f-7d08-42de-8f0e-dd3496dcb5bc&episode=8e11d151-0c9f-4a75-b0c0-2001ec9ba1de">
       </iframe>
-      <div class="fb-comments" @data-href="fullPath" data-numposts="5" data-width=""></div>
+      <div class="fb-comments" @data-href="fullPath" data-numposts="5" data-width=""></div> -->
   </div>
 </template>
 
