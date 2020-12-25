@@ -1,12 +1,21 @@
 
 <template>
   <div>
-    <script v-html="jsonld" type="application/ld+json"></script>
+    <script v-html="jsonld" type="application/ld+json">
+    {
+      '@type': 'PodcastSeries',
+      webFeed: 'https://main.d3u4rdok1doiis.amplifyapp.com/',
+      url: 'https://main.d3u4rdok1doiis.amplifyapp.com/',
+      name: '不打烊',
+      description: '測試 js-onload',
+      author: { name: 'authorName' }
+    }
+    </script>
       <div id="fb-root">hihi</div>
-      <!-- <iframe
+      <iframe
         style="height: 140px; width: 100%; border: none; border-radius: 4px; box-shadow: 0 1px 8px rgba(0, 0, 0, .2);"
         src="https://player.soundon.fm/embed?podcast=5d485b3f-7d08-42de-8f0e-dd3496dcb5bc&episode=8e11d151-0c9f-4a75-b0c0-2001ec9ba1de">
-      </iframe> -->
+      </iframe>
       <div class="fb-comments" @data-href="fullPath" data-numposts="5" data-width=""></div>
   </div>
 </template>
@@ -42,21 +51,6 @@ export default {
         },
       ],
     })
-  },
-jsonld() {
-    const items = this.breadcrumbs.map((item, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      item: {
-        '@id': item.url,
-        name: item.text,
-      },
-    }));
-    return {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: items,
-    };
   },
   // updated() {
   //   const FB = Vue.FB;
