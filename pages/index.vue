@@ -41,31 +41,46 @@ export default {
   },
   head() {
     return {
-      title: '',
       meta: [
-                {
+        {
+          hid: 'fb:app_id',
           property: 'fb:app_id',
-          content: '761351597756340'
+          content: '126015758212962'
         },
         {
-          property: 'og:url',
-          content: 'URL'
-        },
-        {
+          hid: 'title',
           property: 'og:title',
-          content: 'TITLE'
+          content: '高年級不打烊RRRRRR'
         },
         {
-          property: 'og:description',
-          content: 'DESC'
-        },
-        {
+          hid: 'og:image',
           property: 'og:image',
-          content: 'IMG'
+          content: require('~/assets/image/homePage/icon_logo.svg')
         },
         {
-          property: 'fb:admins',
-          content: '2047278791957536'
+          name: 'keywords',
+          content: '104高年級,退休,podcast,高年級不打烊'
+        },
+        {
+          name: 'description',
+          content: '聽人物、說工作。每個高年級朋友經歷職場上的退休，猶如一年四季的換季。退休後轉換了不同的心情和形式，經歷不一樣的人生和工作。主持人是賽桑，5年級2班，每一集會邀請不同的高年級朋友，分享他們的換季和退休經驗談。'
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content:
+            '聽人物、說工作。每個高年級朋友經歷職場上的退休，猶如一年四季的換季。退休後轉換了不同的心情和形式，經歷不一樣的人生和工作。主持人是賽桑，5年級2班，每一集會邀請不同的高年級朋友，分享他們的換季和退休經驗談。'
+        },
+        {
+          hid: 'og:keywords',
+          property: 'og:keywords',
+          content:
+            '104高年級,退休,podcast,高年級不打烊'
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website'
         }
       ]
     }
