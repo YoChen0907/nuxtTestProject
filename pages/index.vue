@@ -58,6 +58,10 @@ export default {
           content: require('~/assets/image/homePage/icon_logo.svg')
         },
         {
+          name: 'title',
+          content: 'RRRR'
+        },
+        {
           name: 'keywords',
           content: '104高年級,退休,podcast,高年級不打烊'
         },
