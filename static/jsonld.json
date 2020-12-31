@@ -1,18 +1,37 @@
 {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "url": "https://main.d3u4rdok1doiis.amplifyapp.com/",
-    "name" : "高年級不打烊",
-    "description":"聽人物、說工作。每個高年級朋友經歷職場上的退休，猶如一年四季的換季。退休後轉換了不同的心情和形式，經歷不一樣的人生和工作。主持人是賽桑，5年級2班，每一集會邀請不同的高年級朋友，分享他們的換季和退休經驗談。",
-    "legalName" : "一零四資訊科技股份有限公司",
-    "email" : "senior@104.com.tw",
-    "alternateName" : "104Senior",
-    "logo": "https://senior.104.com.tw/favicon/apple-touch-icon.png",
-    "image" : "https://senior.104.com.tw/_nuxt/img/44a8589.jpg",
-    "sameAs" : "https://www.facebook.com/104senior/",
-    "webFeed": "https://soundcloud.com/104senior/",
-    "author": {
-        "name": "賽桑"
+    "index":{
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "https://main.d3u4rdok1doiis.amplifyapp.com/",
+        "name" : "高年級不打烊",
+        "description":"聽人物、說工作。每個高年級朋友經歷職場上的退休，猶如一年四季的換季。退休後轉換了不同的心情和形式，經歷不一樣的人生和工作。主持人是賽桑，5年級2班，每一集會邀請不同的高年級朋友，分享他們的換季和退休經驗談。",
+        "legalName" : "一零四資訊科技股份有限公司",
+        "email" : "senior@104.com.tw",
+        "alternateName" : "104Senior",
+        "logo": "https://senior.104.com.tw/favicon/apple-touch-icon.png",
+        "image" : "https://senior.104.com.tw/_nuxt/img/44a8589.jpg",
+        "sameAs" : "https://www.facebook.com/104senior/",
+        "webFeed": "https://soundcloud.com/104senior/",
+        "author": {
+            "name": "賽桑"
+        }
+    },
+    "pathOne": {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "https://main.d3u4rdok1doiis.amplifyapp.com/",
+        "name" : "pathOne",
+        "description":"pathOne",
+        "legalName" : "pathOne",
+        "email" : "pathOne",
+        "alternateName" : "pathOne",
+        "logo": "https://senior.104.com.tw/favicon/apple-touch-icon.png",
+        "image" : "https://senior.104.com.tw/_nuxt/img/44a8589.jpg",
+        "sameAs" : "https://www.facebook.com/104senior/",
+        "webFeed": "https://soundcloud.com/104senior/",
+        "author": {
+            "name": "pathOne"
+        }
     }
-  }
+}
   

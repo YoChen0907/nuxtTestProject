@@ -7,6 +7,7 @@
         src="https://player.soundon.fm/embed?podcast=5d485b3f-7d08-42de-8f0e-dd3496dcb5bc&episode=8e11d151-0c9f-4a75-b0c0-2001ec9ba1de">
       </iframe>
       <div class="fb-comments" @data-href="fullPath" data-numposts="5" data-width=""></div>
+      <button @click="buttonMethod">go path one</button>
   </div>
 </template>
 
@@ -36,11 +37,19 @@ export default {
       ],
     })
   },
+  computed: {
+    pageCheck: function pageCheck () {
+      return this.$route.query.ep ? `${this.$route.query.ep}` : 'index'
+    },
+  },
   jsonld() {
-    return jsonld;
+    const json = jsonld[pageCheck];
+    console.log('jsonld', json);
+    return json;
   },
   head() {
     return {
+      title: '104高年級  - 高年級不打烊RRRRRR',
       meta: [
         {
           hid: 'fb:app_id',
@@ -59,7 +68,7 @@ export default {
         },
         {
           name: 'title',
-          content: 'RRRR'
+          content: '高年級不打烊RRRRRR'
         },
         {
           name: 'keywords',
@@ -89,5 +98,10 @@ export default {
       ]
     }
   },
+  methods: {
+    buttonMethod: function() {
+      this.$router.push(`/events/podcast/?ep=${podcastData.id}`);
+    }
+  }
 }
 </script>
