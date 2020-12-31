@@ -19,7 +19,7 @@
     "pathOne": {
         "@context": "http://schema.org",
         "@type": "Organization",
-        "url": "https://main.d3u4rdok1doiis.amplifyapp.com/",
+        "url": "https://main.d3u4rdok1doiis.amplifyapp.com/?ep=pathOne",
         "name" : "pathOne",
         "description":"pathOne",
         "legalName" : "pathOne",
@@ -27,8 +27,6 @@
         "alternateName" : "pathOne",
         "logo": "https://senior.104.com.tw/favicon/apple-touch-icon.png",
         "image" : "https://senior.104.com.tw/_nuxt/img/44a8589.jpg",
-        "sameAs" : "https://www.facebook.com/104senior/",
-        "webFeed": "https://soundcloud.com/104senior/",
         "author": {
             "name": "pathOne"
         }
