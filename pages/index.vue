@@ -43,7 +43,7 @@ export default {
     },
   },
   jsonld() {
-    const json = jsonld[pageCheck];
+    const json = jsonld[this.pageCheck];
     console.log('jsonld', json);
     return json;
   },
