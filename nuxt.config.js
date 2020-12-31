@@ -18,8 +18,8 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    { src: '~/plugins/fb-sdk', ssr: false },
-    { src: '~/plugins/jsonld' }
+    { src: '~/plugins/fb-sdk', ssr: true },
+    { src: '~/plugins/jsonld', ssr: true }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
