@@ -100,7 +100,7 @@ export default {
   },
   methods: {
     buttonMethod: function() {
-      this.$router.push(`/events/podcast/?ep=${podcastData.id}`);
+      this.$router.push(`/?ep=pathOne`);
     }
   }
 }
